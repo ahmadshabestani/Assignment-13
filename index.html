@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>14</title>
+</head>
+<body>
+    <div class="container">
+        <button id="new-game" class="button-91">بازی جدید</button>
+        <div class="pc-play">
+            <span>بازی با دو نفر </span>
+            <button onclick="plyPlayer()"  class="btn-ply"></button>
+            <span>بازی با سیستم </span>
+            <button onclick="plypc()"  class="btn-ply"></button>
+        </div>
+        <div class="tb-container">
+            <table class="mybutton">
+                <tr>
+                    <td><button onclick="showindex(0,0)" class="cell"></button></td>
+                    <td><button onclick="showindex(0,1)" class="cell"></button></td>
+                    <td><button onclick="showindex(0,2)" class="cell"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="showindex(1,0)" class="cell"></button></td>
+                    <td><button onclick="showindex(1,1)" class="cell"></button></td>
+                    <td><button onclick="showindex(1,2)" class="cell"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="showindex(2,0)" class="cell"></button></td>
+                    <td><button onclick="showindex(2,1)" class="cell"></button></td>
+                    <td><button onclick="showindex(2,2)" class="cell"></button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="my-txt">
+            <p id="txt-e1">خوش آمدید</p>
+            <p id="x-win"></p>
+            <p id="y-win"></p>
+            <p id="mosavi"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
